@@ -1,12 +1,18 @@
 'use strict'
-
-function getSecondsOfThisYearUntilNow () {
-  const now = new Date()
-  const dayFrom = new Date('January 1 ' + now.getFullYear());
-  return parseInt((now-dayFrom)/1000)
-}
+/*
 
 
+const getSecondsOfThisYearUntilNow =   () => 
+Math.round((new Date() - new Date(new Date().getFullYear(), 0, 1)) / 1000);
+
+*/
+
+const getSecondsOfThisYearUntilNow =   () => 
+  Math.round((Date.now() - new Date(new Date().getFullYear(), 0, 1)) / 1000);
+
+
+  
+ 
 
 export default getSecondsOfThisYearUntilNow;
 
