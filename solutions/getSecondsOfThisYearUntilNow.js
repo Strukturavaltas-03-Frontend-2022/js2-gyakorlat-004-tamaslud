@@ -3,13 +3,13 @@
 
 
 const getSecondsOfThisYearUntilNow =   () => 
-Math.round((new Date() - new Date(new Date().getFullYear(), 0, 1)) / 1000);
-
+((new Date() - new Date(new Date().getFullYear(), 0, 1)) / 1000);
 */
 
-const getSecondsOfThisYearUntilNow =   () => 
-  Math.round((Date.now() - new Date(new Date().getFullYear(), 0, 1)) / 1000);
 
+
+const getSecondsOfThisYearUntilNow =   () => 
+((Date.now() - new Date(new Date().getFullYear(), 0, 1)) / 1000);
 
   
  
